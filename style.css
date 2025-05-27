@@ -1,0 +1,190 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Theme (Light Mode) */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #000;
+  min-height: 100vh;
+  transition: background 0.5s, color 0.5s;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0077cc;
+}
+
+.theme-toggle {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.theme-toggle:hover {
+  background-color: #005fa3;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #0077cc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.project,
+.certificate {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.project a,
+.certificate a {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+.project a:hover,
+.certificate a:hover {
+  color: #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode nav a {
+  color: #fff;
+}
+
+body.dark-mode nav a:hover {
+  color: #ffcc00;
+}
+
+body.dark-mode .theme-toggle {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+body.dark-mode .theme-toggle:hover {
+  background-color: #e6b800;
+}
+
+body.dark-mode .project,
+body.dark-mode .certificate,
+body.dark-mode form {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .project a,
+body.dark-mode .certificate a {
+  color: #ffcc00;
+}
+
+body.dark-mode .project a:hover,
+body.dark-mode .certificate a:hover {
+  color: #fff;
+}
+
+body.dark-mode button[type="submit"] {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+body.dark-mode button[type="submit"]:hover {
+  background-color: #e6b800;
+}
